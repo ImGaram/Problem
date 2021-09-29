@@ -18,5 +18,8 @@
     <ClCompile Include="1.입출력과 사칙연산.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="Q2869.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
