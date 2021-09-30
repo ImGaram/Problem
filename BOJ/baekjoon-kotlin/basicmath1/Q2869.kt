@@ -9,12 +9,6 @@ fun main(args: Array<String>) {
     var v = sc.nextInt()
     var day = 0
 
-    while (true){
-        v-=a
-        day++
-        if (v<=0)
-            break
-        v+=b
-    }
+    day = (v-b-1)/(a-b)+1
     print(day)
 }
