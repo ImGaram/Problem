@@ -13,13 +13,19 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="소스 파일\math">
+      <UniqueIdentifier>{3ee7574d-8a5f-4cdd-b5be-48b12d5483ca}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="1.입출력과 사칙연산.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
     <ClCompile Include="Q2869.c">
-      <Filter>소스 파일</Filter>
+      <Filter>소스 파일\math</Filter>
+    </ClCompile>
+    <ClCompile Include="Q4673.cpp">
+      <Filter>소스 파일\math</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
