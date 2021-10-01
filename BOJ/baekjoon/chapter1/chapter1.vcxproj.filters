@@ -27,5 +27,8 @@
     <ClCompile Include="Q4673.cpp">
       <Filter>소스 파일\math</Filter>
     </ClCompile>
+    <ClCompile Include="Q17478.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
