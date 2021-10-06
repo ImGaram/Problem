@@ -16,6 +16,9 @@
     <Filter Include="소스 파일\math">
       <UniqueIdentifier>{3ee7574d-8a5f-4cdd-b5be-48b12d5483ca}</UniqueIdentifier>
     </Filter>
+    <Filter Include="소스 파일\array">
+      <UniqueIdentifier>{7aa7a9ce-985a-4ceb-a7cd-b59b43acdeec}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="1.입출력과 사칙연산.c">
@@ -29,6 +32,9 @@
     </ClCompile>
     <ClCompile Include="Q17478.cpp">
       <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="평균은 넘겠지.c">
+      <Filter>소스 파일\array</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
