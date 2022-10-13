@@ -1,10 +1,8 @@
 import java.io.BufferedReader
 import java.io.InputStreamReader
-import java.util.Scanner
 
 fun main() {
     val bf = BufferedReader(InputStreamReader(System.`in`))
-    val sc = Scanner(System.`in`)
 
     val listItemSize = bf.readLine().split(" ")
 
