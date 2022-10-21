@@ -23,7 +23,7 @@ fun binarySearch(array: IntArray, searchData: Int, low: Int, high: Int): Int {
 
     // 중앙 값 결정하기
 //    val mid = low + (high - low)/2    범위를 넘어서는 경우 구현
-    val mid = (high-low)/2
+    val mid = (high+low)/2
 
     return if (array[mid] == searchData) {
         array[mid]
