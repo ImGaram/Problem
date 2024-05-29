@@ -1,33 +1,21 @@
-import java.io.BufferedReader
-import java.io.BufferedWriter
-import java.io.InputStreamReader
-import java.io.OutputStreamWriter
+package src.problems.silver
 
-fun main() {
-    val bf = BufferedReader(InputStreamReader(System.`in`))
-    val bw = BufferedWriter(OutputStreamWriter(System.out))
+import java.util.Scanner
 
-    val num = bf.readLine().toInt()
-    val stringArray = ArrayList<String>(num)
-    repeat(num) {
-        val data = bf.readLine()
-        stringArray.add(it, data)
+fun main() = with(Scanner(System.`in`)) {
+    val case = nextInt()
+    val words = mutableListOf<String>()
+
+    repeat(case) {
+        val word = next()
+        if (!words.contains(word)) words.add(word)
     }
 
-    val comparator: Comparator<String> = compareBy { it.length }
-    val resultArray = stringArray.sortedWith(comparator).toMutableList()
-    for (i in 0..resultArray.size+1) {
-        if (resultArray[i].length == resultArray[i+1].length) {
-            if (resultArray[i] > resultArray[i+1])
-                resultArray[i] = resultArray[i+1].also { resultArray[i+1] = resultArray[i] }
-            else if (resultArray[i] < resultArray[i+1])
-                resultArray[i+1] = resultArray[i].also { resultArray[i] = resultArray[i+1] }
-            else continue
-        }
+    // 사전순 정렬
+    val sortDictionary = words.sorted()
+    // string 길이순으로 정렬
+    val sortLength = sortDictionary.sortedBy { it.length }
+    sortLength.forEach {
+        println(it)
     }
-
-
-    bf.close()
-    bw.write(stringArray.sortedWith(comparator).distinct().toString())
-    bw.close()
 }
