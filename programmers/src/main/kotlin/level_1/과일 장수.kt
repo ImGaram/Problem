@@ -1,7 +1,5 @@
 package main.kotlin.level_1
 
-import java.util.*
-
 class `과일 장수` {
     fun solution(k: Int, m: Int, score: IntArray): Int {
         var answer: Int = 0
