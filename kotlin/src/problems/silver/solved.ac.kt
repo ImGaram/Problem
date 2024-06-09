@@ -28,7 +28,7 @@ fun main() = with(BufferedReader(InputStreamReader(System.`in`))) {
 }
 
 // 두 숫자의 평균을 계산.
-fun round(num1: Double, num2: Double = 1.0): Double {
+private fun round(num1: Double, num2: Double = 1.0): Double {
     val result = (num1 / num2).toString().split(".")
     return if (result.last()[0].digitToInt() >= 5) result.first().toDouble() + 1
     else result.first().toDouble()
