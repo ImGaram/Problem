@@ -6,14 +6,14 @@ import java.util.LinkedList
 import java.util.Queue
 import java.util.Stack
 
-var visited = booleanArrayOf()
+private var visited = booleanArrayOf()
 // graph는 각 노드의 관계를 나타냄.
 //[]            // 값 0의 접점은 없음
 //[2, 3, 4]     // 값 1의 접점은 2, 3, 4
 //[1, 4]
 //[1, 4]
 //[1, 2, 3]
-var graph = mutableListOf<MutableList<Int>>()
+private var graph = mutableListOf<MutableList<Int>>()
 fun main() = with(BufferedReader(InputStreamReader(System.`in`))) {
     val (n, m, start) = readLine().split(" ").map { it.toInt() }
 
