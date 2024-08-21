@@ -1,4 +1,4 @@
-package problems.gold
+package problems.gold.g1
 
 import java.io.BufferedReader
 import java.io.BufferedWriter

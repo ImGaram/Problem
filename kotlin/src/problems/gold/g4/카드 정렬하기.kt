@@ -1,4 +1,4 @@
-package src.problems.gold
+package problems.gold.g4
 
 import java.util.*
 

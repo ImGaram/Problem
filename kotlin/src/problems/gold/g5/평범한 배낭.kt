@@ -1,4 +1,4 @@
-package problems.gold
+package problems.gold.g5
 
 import java.util.Scanner
 import kotlin.math.max
