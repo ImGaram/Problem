@@ -1,4 +1,4 @@
-package problems.platinum
+package problems.platinum.p5
 
 import java.io.BufferedReader
 import java.io.InputStreamReader
