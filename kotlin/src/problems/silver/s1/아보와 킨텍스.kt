@@ -1,4 +1,4 @@
-package problems.gold.g5
+package problems.silver.s1
 
 import java.io.BufferedReader
 import java.io.InputStreamReader
