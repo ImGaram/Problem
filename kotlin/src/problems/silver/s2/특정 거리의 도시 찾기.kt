@@ -30,14 +30,14 @@ fun main() = with(BufferedReader(InputStreamReader(System.`in`))) {
         cities[roadStart].add(roadEnd)
     }
 
-    dfs(start)
+    bfs(start)
 
     answer.sort()
     if (answer.isEmpty()) println(-1)
     else println(answer.joinToString("\n"))
 }
 
-private fun dfs(start: Int) {
+private fun bfs(start: Int) {
     val queue: Queue<List<Int>> = LinkedList()
     queue.add(listOf(start, 0))
     visited[start] = true
