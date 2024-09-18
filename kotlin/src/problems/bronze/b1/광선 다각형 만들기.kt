@@ -1,4 +1,4 @@
-package problems.unrated
+package problems.bronze.b1
 
 import java.io.BufferedReader
 import java.io.InputStreamReader
