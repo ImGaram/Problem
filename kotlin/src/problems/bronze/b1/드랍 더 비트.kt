@@ -5,16 +5,14 @@ import java.io.InputStreamReader
 import kotlin.math.max
 import kotlin.math.pow
 
-private var size = 0
-
 fun main() = with(BufferedReader(InputStreamReader(System.`in`))) {
-    size = readLine().toInt()
+    val size = readLine().toInt()
     val (a, b) = readLine().split(" ").map { it.toInt() }
     val aCases = mutableListOf<Int>()
     val bCases = mutableListOf<Int>()
 
     for (i in 0 until 2.0.pow(size).toInt()) {
-        val value = format(i.toString(2))
+        val value = i.toString(2)
         val oneCnt = value.filter { it == '1' }.length
 
         if (oneCnt == a) aCases.add(i)
@@ -29,8 +27,4 @@ fun main() = with(BufferedReader(InputStreamReader(System.`in`))) {
     }
 
     println(answer)
-}
-
-private fun format(value: String): String {
-    return value.padStart(size, '0')
 }
