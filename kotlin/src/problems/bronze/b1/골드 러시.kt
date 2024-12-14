@@ -21,7 +21,6 @@ fun main() {
             continue
         } else {
             var target = min(a, b)
-            var bag: Long = 0
             var cut = 0
 
             while (target != 0L) {
@@ -29,7 +28,6 @@ fun main() {
                     gold /= 2
                     cut++
                 } else {
-                    bag += gold
                     target -= gold
                 }
             }
